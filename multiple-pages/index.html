@@ -1,64 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Frontend Developer Portfolio</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiple Page & CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+    <link rel="icon" href="icon-16.png" type="image/png" />
+  </head>
+  <body
+    class="border-bottom-common border-left-common border-right-common border-top-common"
+  >
+    <header>
+      <div class="logo">🟧 Your name</div>
+      <nav>
+        <a href="#">Home</a> / <a href="projects.html">Projects</a> /
+        <a href="articles.html">Articles</a> /
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
 
-  <header>
-    <div>
-      <img src="logo.png" alt="Logo" />
-      <span>your name</span>
-    </div>
-    <nav>
-      <a href="#">Home</a> /
-      <a href="projects.html">Projects</a> /
-      <a href="articles.html">Articles</a> /
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+    <main>
+      <section class="intro">
+        <h1>Frontend Developer</h1>
+        <p>html only with proper layout, no styling</p>
+      </section>
 
-  <main>
-    <section>
-      <h1>Frontend Developer</h1>
-      <p>html only with proper layout, no styling</p>
-    </section>
-
-    <section>
-      <div class="columns">
-        <!-- Projects Column -->
-        <aside>
-          <h2>Projects</h2>
-          <ul>
-            <li>HTML Only Portfolio</li>
-            <li>Calculator</li>
-            <li>Quiz App</li>
-            <li>Countdown Timer</li>
-            <li>Product Upcoming Page</li>
-          </ul>
-        </aside>
-
-        <!-- Work Experience Column -->
-        <div>
-          <h2>Work Experience</h2>
-          <article>
-            <h3>roadmap.sh</h3>
-            <p>Solved all the frontend projects</p>
-            <a href="#">Visit my Profile</a>
-          </article>
-          <article>
-            <h3>OpenSource Work</h3>
-            <p>Contributed to 50 opensource projects. Made my own projects with 200 GitHub Stars.</p>
-            <a href="#">Visit my GitHub Profile</a>
-          </article>
+      <section class="grid border-top-common border-bottom-common">
+        <div class="project-list border-right-common">
+          <div class="border-bottom-common">
+            <h2>Projects</h2>
+            HTML only Portfolio
+          </div>
+          <div class="border-bottom-common">Calculator</div>
+          <div class="border-bottom-common">Quiz App</div>
+          <div class="border-bottom-common">Countdown Timer</div>
+          <div>Product Upcoming Page</div>
         </div>
 
-        <!-- Education Column -->
-        <div>
+        <div class="experience border-right-common">
+          <div class="border-bottom-common">
+            <h2>Work Experience</h2>
+            <p>
+              <strong>roadmap.sh</strong><br />
+              Solved all the frontend projects<br />
+              <a href="#">Visit my Profile</a>
+            </p>
+          </div>
+          <div>
+            <p>
+              <strong>OpenSource Work</strong><br />
+              Contributed to 50 opensource projects. Made my own projects with 200
+              GitHub Stars.<br />
+              <a href="#">Visit my GitHub Profile</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="education">
           <h2>Education</h2>
-          <p>Graduated with 3.76 out of 4 CGPA. Won Acme Hackathon. Organized 30 sessions.</p>
+          <p>
+            Graduated with 3.76 out of 4 CGPA. Won Acme Hackathon. Organized 30
+            sessions.
+          </p>
           <p>Courses I took:</p>
           <ul>
             <li>Object Oriented Programming</li>
@@ -69,35 +74,41 @@
             <li>Computer Graphics</li>
             <li>Database Management Systems</li>
             <li>Distributed Database Systems</li>
-            <li>Discreet Mathematics</li>
+            <li>Discrete Mathematics</li>
           </ul>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Reviews Section -->
-    <section>
-      <h2>Reviews from my Teachers</h2>
-      <div class="reviews">
-        <blockquote>
-          <p>John doe was a brilliant student; always stood out with his assignments.</p>
-          <footer>Jane Doe<br><small>Assistant Professor</small></footer>
-        </blockquote>
-        <blockquote>
-          <p>John doe was a brilliant student; always stood out with his assignments.</p>
-          <footer>Jane Doe<br><small>Assistant Professor</small></footer>
-        </blockquote>
-        <blockquote>
-          <p>John doe was a brilliant student; always stood out with his assignments.</p>
-          <footer>Jane Doe<br><small>Assistant Professor</small></footer>
-        </blockquote>
-      </div>
-    </section>
-  </main>
+      <section class="reviews">
+        <h2>Reviews from my Teachers</h2>
+        <div class="review-boxes">
+          <div class="review">
+            John doe was a brilliant student; always stood out with his
+            assignments.
+            <div class="author">
+              Jane Doe<br /><span>Assistant Professor</span>
+            </div>
+          </div>
+          <div class="review">
+            John doe was a brilliant student; always stood out with his
+            assignments.
+            <div class="author">
+              Jane Doe<br /><span>Assistant Professor</span>
+            </div>
+          </div>
+          <div class="review">
+            John doe was a brilliant student; always stood out with his
+            assignments.
+            <div class="author">
+              Jane Doe<br /><span>Assistant Professor</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-  <footer>
-    <p>&copy; all rights reserved 2025</p>
-  </footer>
-
-</body>
+    <footer>
+      <p>© all rights reserved 2025</p>
+    </footer>
+  </body>
 </html>
