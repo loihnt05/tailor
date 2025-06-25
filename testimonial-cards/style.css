@@ -11,7 +11,7 @@ body {
   margin-bottom: 40px;
 }
 
-.row1 .grid1 .img1 {
+.img1 {
   width: 15%;
   height: auto;
   border-radius: 50%;
@@ -40,7 +40,7 @@ body {
   width: auto;
   background: white;
   border-radius: 20px;
-  border: black 1px solid;
+  border: black 2px solid;
   padding: 20px;
 }
 
@@ -143,4 +143,40 @@ body {
 
 .stars {
     display: flex;;
+}
+
+.row3 {
+    border: black 2px solid;
+    border-radius: 20px;
+    padding: 40px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+
+}
+
+.row3 p { 
+    margin: 0;
+}
+
+.row3 .img3 {
+    width: 10%;
+    height: auto;
+    border-radius: 50%;
+    opacity: 50%;
+}
+
+.row3 .cardios {
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.row3 .cardios div {
+    padding: 20px;
 }
