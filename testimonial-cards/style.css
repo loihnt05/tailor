@@ -102,13 +102,24 @@ body {
 
 .row2 .name {
     font-size: 1.5em;
-    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 5px;
 }
+
+.row2 small {
+    font-size: 0.8em;
+    color: gray;
+}
+
+.row2 .text {
+    padding-top: 25px;
+}
+
 
 .star {
   width: 30px;
   height: 30px;
-  background: yellow;
+  background: gold;
   clip-path: polygon(
     50% 0%,
     61% 35%,
