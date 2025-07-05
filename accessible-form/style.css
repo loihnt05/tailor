@@ -1,0 +1,132 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  border: #333 2px solid;
+  border-radius: 20px;
+  margin: 50px 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 16px;
+}
+
+.form {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form label {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.form input {
+  padding: 3px 7px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.sr-only {
+  margin-bottom: 10px;
+}
+
+.password-input {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.password-input button {
+  justify-content: center;
+  display: flex;
+}
+
+.password-input input {
+  display: flex;
+  flex: 1;
+}
+
+.circle-progress {
+  padding: 50px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background: #e6e6e6;
+  border-radius: 50%;
+  position: relative;
+}
+
+.mask {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  border-radius: 50%;
+  clip: rect(0px, 100px, 100px, 50px);
+}
+
+.full {
+  background: black;
+  clip: rect(0px, 50px, 100px, 0px);
+  transform: rotate(234deg);
+}
+
+.half {
+  background: black;
+  clip: rect(0px, 100px, 100px, 50px);
+}
+
+.inside-circle {
+  width: 80px;
+  height: 80px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.progress-text {
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+.tasks {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 30px;
+  flex: 1;
+}
+
+.tasks ul {
+  flex: 1;
+  height: 100%;
+  list-style: none;
+  border-radius: 10px;
+  background-color: lightgray;
+  padding: 20px 20px;
+}
+
+.tasks li {
+  font-weight: 400;
+  padding: 10px;
+}

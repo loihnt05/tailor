@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accessible Form UI</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="/index.html" method="post" class="form">
+      <label for="fName">Full Name</label>
+      <input
+        type="text"
+        id="fName"
+        name="fName"
+        placeholder="What should we call you?"
+        required
+      />
+
+      <label for="email">Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+        aria-required="true"
+        aria-errormessage="wrong-email"
+      />
+      <span id="wrong-email" class="sr-only">Email was wrong</span>
+
+      <div class="password-create" style="flex: 1">
+        <label for="pwd">Password</label>
+        <div class="password-input" style="flex: 1">
+          <input
+            type="password"
+            id="pas"
+            name="pas"
+            placeholder="xxxxxxxxxx"
+            required
+            aria-required="true"
+            aria-describedby="password-toggle-label"
+          />
+          <button
+            type="button"
+            class="toggle-password-btn"
+            aria-pressed="false"
+            aria-label="Show password"
+            id="password-toggle-btn"
+            style="align-items: center"
+          >
+            👁
+          </button>
+        </div>
+      </div>
+      <span id="password-toggle-label" class="sr-only">Password too weak!</span>
+
+      <div class="password-confirmation">
+        <label for="cPwd">Confirm Password</label>
+        <div class="password-input" style="flex: 1">
+          <input
+            type="password"
+            id="cPas"
+            name="cPas"
+            placeholder="xxxxxxxxxx"
+            required
+          />
+
+          <button
+            type="button"
+            class="toggle-password-btn"
+            aria-pressed="false"
+            aria-label="Show password"
+            id="password-toggle-btn"
+          >
+            👁
+          </button>
+        </div>
+        <span id="password-not-match" class="sr-only">Password not match!</span>
+      </div>
+
+      <input type="submit" value="Update profile" />
+    </form>
+
+    <div class="progress">
+      <div class="circle-progress">
+        <div class="circle">
+          <div class="mask full"></div>
+          <div class="mask half"></div>
+          <div class="inside-circle">65%</div>
+        </div>
+      </div>
+      <div class="progress-text">
+          <span> Profile Completeness </span>
+      </div>
+      <div class="tasks">
+        <ul>
+          <li class="done" style="text-decoration: line-through; color: gray">Create account</li>
+          <li class="done" style="text-decoration: line-through; color: gray">Update roadmap progress</li>
+          <li class="done" style="text-decoration: line-through; color: gray">Setup Public Profile</li>
+          <li class="done">Complete your first project</li>
+          <li class="done">Invite your friends</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
