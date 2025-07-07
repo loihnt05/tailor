@@ -1,11 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cookie</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to my project</h1>
+      <h2>ABOUT COOKIE CONSENT</h2>
+      <p>
+        This project demonstrates a simple cookie consent popup that appears
+        when the user visits the page. The popup includes a message and a button
+        to accept the consent.
+      </p>
+      <p>
+        To see the cookie consent popup in action, please visit the
+        <a href="https://www.cookiebot.com/en/cookie-consent/"
+          >cookie consent page</a
+        >.
+      </p>
+      <p>Feel free to explore the code and customize the popup as needed.</p>
+      <p>Happy coding!</p>
+      <p>
+        For more information, check out the
+        <a href="https://github.com/loihnt05/tailor">GitHub repository</a>.
+      </p>
+      <p>Thank you for visiting!</p>
+      <p>© 2023 Tailor Project</p>
+      <p>Last updated: October 2023</p>
+    </header>
+
+    <main>
+      <div class="cookie-consent-popup">
+        <img src="https://cdn-icons-png.flaticon.com/512/1047/1047711.png" alt="cookie image" />
+        <h3 class="title">Your privacy</h3>
+        <p>
+          By clicking “Accept all cookies”, you agree Stack Exchange can store
+          cookies on your device and disclose information in accordance with our
+          <a href="https://www.cookiebot.com/en/cookie-consent/">Cookie Policy </a> 
+        </p>
+        <div class="buttons">
+            <button id="accept-cookies button">Accept all cookies</button>
+            <button id="decline-cookies button">Necessary cookies</button>
+            <button id="custom-cookies button">Customize settings</button>
+        </div>
+      </div>
+
+      <script>
+        document
+          .getElementById("accept-cookies")
+          .addEventListener("click", function () {
+            document.querySelector(".cookie-consent-popup").style.display =
+              "none";
+            // Here you can also set a cookie to remember the user's choice
+          });
+      </script>
+    </main>
+  </body>
 </html>
