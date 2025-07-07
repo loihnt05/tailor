@@ -27,15 +27,11 @@ body {
 .tab:hover {
     cursor: pointer;
     opacity: 60%;
+    border-bottom: 5px solid lightgray;
 }
 
-.tab:focus   {
-    outline: none;
+.tabs button.active {
     border-bottom: 5px solid black;
-}
-
-.contents {
-
 }
 
 .content {
