@@ -1,6 +1,93 @@
+html {
+  height: 100%;
+}
 body {
-    font-family: Arial, sans-serif;
-    margin: 0 auto;
-    padding: 0;
-    width: 90%;
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  padding: 0;
+  width: 90%;
+  background-color: black;
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+}
+
+.container {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8%;
+  position: relative;
+}
+
+.container .item {
+  user-select: none;
+  position: relative;
+}
+
+.container .item .title:hover {
+  cursor: pointer;
+  opacity: 80%;
+}
+
+.container .item:hover .tooltip {
+  visibility: visible;
+  -webkit-animation: fadeIn 0.9s;
+  animation: fadeIn 0.9s;
+}
+
+.container .item:hover .triangle {
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+  visibility: visible;
+}
+
+.container .tooltip {
+  visibility: hidden;
+  z-index: 9999;
+  position: absolute;
+  top: -55px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.triangle {
+  visibility: hidden;
+  position: absolute;
+  top: -26%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid white;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
