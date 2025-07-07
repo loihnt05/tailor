@@ -1,0 +1,43 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0 auto;
+    padding: 2rem;
+    width: 90%;
+    background-color: white;
+    color: black;
+
+}
+
+.tabs {
+    display: flex;
+    gap: 2rem;
+}
+
+.tab {
+    color: black;
+    background-color: white;
+    border-bottom: 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.tab:hover {
+    cursor: pointer;
+    opacity: 60%;
+}
+
+.tab:focus   {
+    outline: none;
+    border-bottom: 5px solid black;
+}
+
+.contents {
+
+}
+
+.content {
+    display: none;
+}
