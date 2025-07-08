@@ -1,17 +1,23 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0 auto;
-    padding: 2rem;
     width: 90%;
     font-size: 1.2rem;
+    position: relative;
+    height: 10000px;
+    overflow: auto;
 }
 
 .cookie-consent-popup {
+    display: none;
     background-color: #2f3337;
     color: white;
     padding: 2%;
     max-width: 30%;
     border-radius: 10px;
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
 }
 
 img {
@@ -61,7 +67,7 @@ button:hover {
 
 @media (max-width: 600px) {
     .cookie-consent-popup {
-        max-width: 100%;
+        max-width: 40%;
     }
     img {
         max-width: 50%;

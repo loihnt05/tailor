@@ -30,31 +30,65 @@
       <p>Thank you for visiting!</p>
       <p>© 2023 Tailor Project</p>
       <p>Last updated: October 2023</p>
+      <button id="clear-cookies">CLEAR COOKIE  </button>
     </header>
 
     <main>
       <div class="cookie-consent-popup">
-        <img src="https://cdn-icons-png.flaticon.com/512/1047/1047711.png" alt="cookie image" />
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/1047/1047711.png"
+          alt="cookie image"
+        />
         <h3 class="title">Your privacy</h3>
         <p>
           By clicking “Accept all cookies”, you agree Stack Exchange can store
           cookies on your device and disclose information in accordance with our
-          <a href="https://www.cookiebot.com/en/cookie-consent/">Cookie Policy </a> 
+          <a href="https://www.cookiebot.com/en/cookie-consent/"
+            >Cookie Policy
+          </a>
         </p>
         <div class="buttons">
-            <button id="accept-cookies button">Accept all cookies</button>
-            <button id="decline-cookies button">Necessary cookies</button>
-            <button id="custom-cookies button">Customize settings</button>
+          <button id="accept-cookies">Accept all cookies</button>
+          <button id="decline-cookies">Necessary cookies</button>
+          <button id="custom-cookies">Customize settings</button>
         </div>
       </div>
 
+
       <script>
+
+        if (!localStorage.getItem("cookieConsent")) {
+          document.querySelector(".cookie-consent-popup").style.display =
+            "block";
+        } else {
+          document.querySelector(".cookie-consent-popup").style.display =
+            "none";
+        }
+
         document
           .getElementById("accept-cookies")
           .addEventListener("click", function () {
+            localStorage.removeItem("cookieConsent");
+            localStorage.setItem("cookieConsent", "accepted");
+              document.querySelector(".cookie-consent-popup").style.display =
+              "none";
+          });
+
+          document
+          .getElementById("decline-cookies")
+          .addEventListener("click", function () {
+            localStorage.removeItem("cookieConsent");
+            localStorage.setItem("cookieConsent", "declined");
             document.querySelector(".cookie-consent-popup").style.display =
               "none";
-            // Here you can also set a cookie to remember the user's choice
+          });
+
+          document
+          .getElementById("clear-cookies")
+          .addEventListener("click", function () {
+            localStorage.removeItem("cookieConsent");
+            document.querySelector(".cookie-consent-popup").style.display =
+              "block";
           });
       </script>
     </main>
