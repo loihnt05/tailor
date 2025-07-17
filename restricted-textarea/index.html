@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Textarea</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 class="heading">Write your Message</h1>
+    <div class="container">
+      <textarea
+        id="message"
+        class="textarea"
+        rows="10"
+        cols="30"
+        placeholder="Type your message here..."
+      ></textarea>
+      <div class="char-count"><span id="count">0</span> / 250</div>
+    </div>
+  </body>
+  <script>
+    const textarea = document.getElementById("message");
+    const countDisplay = document.getElementById("count");
+    const charCount = document.querySelector(".char-count");
+    const maxChars = 250;
+
+    textarea.addEventListener("input", () => {
+      if (textarea.value.length > maxChars) {
+        textarea.value = textarea.value.substring(0, maxChars);
+      }
+
+      const currentLength = textarea.value.length;
+      countDisplay.textContent = currentLength;
+
+      // Then apply styling
+      if (currentLength === maxChars) {
+        textarea.style.borderColor = "red";
+        textarea.style.color = "red";
+        charCount.style.color = "red";
+        console.log("Maximum character limit reached.");
+      } else {
+        textarea.style.borderColor = "black";
+        textarea.style.color = "black";
+        charCount.style.color = "black";
+      }
+    });
+  </script>
+</html>
