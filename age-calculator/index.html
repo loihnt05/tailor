@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3/build/global/luxon.min.js"></script>
+  </head>
+  <body>
+    <h1>Age Calculator</h1>
+    <form id="age-form" onsubmit="calculateAge(event)">
+      <p>Enter your birth date:</p>
+      <input type="date" id="birth-date" required />
+      <button type="submit">Calculate Age</button>
+    </form>
+
+    <div class="calculate-age" id="result" style="margin-top: 10px;"></div>
+
+    <script>
+      function calculateAge(event) {
+        event.preventDefault();
+
+        const birthDateInput = document.getElementById("birth-date");
+        const birthDateStr = birthDateInput.value;
+
+        const resultDiv = document.getElementById("result");
+
+        if (!birthDateStr) {
+          resultDiv.textContent = "Please enter a valid date.";
+          return;
+        }
+
+        const birthDate = luxon.DateTime.fromISO(birthDateStr);
+        const now = luxon.DateTime.now();
+
+        if (!birthDate.isValid || birthDate > now) {
+          resultDiv.textContent = "Please enter a valid past date.";
+          return;
+        }
+
+        let diff = now.diff(birthDate, ["years", "months", "days"]).toObject();
+
+        const years = Math.floor(diff.years);
+        const months = Math.floor(diff.months);
+
+        resultDiv.textContent = `You are ${years} years and ${months} months old.`;
+        resultDiv.style.textAlign = "center";
+        // resultDiv.style.fontWeight = "bold";
+      }
+    </script>
+  </body>
+</html>
