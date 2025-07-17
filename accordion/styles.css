@@ -5,7 +5,14 @@ body {
     width: 90%;
 }
 
+p {
+    margin: 0;
+}
+
 .question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #f1f1f1;
     padding: 15px;  
     border: 1px solid #ccc;
@@ -17,5 +24,11 @@ body {
     background-color: #e2e2e2;
     padding: 15px;
     border: 1px solid #ccc;
-    display: none; /
+    display: none;
+    margin-bottom: 5px;
+}
+
+.container {
+    margin: auto;
+    margin-bottom: 10px;
 }
