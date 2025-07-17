@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accordion</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Frequently Asked Questions</h1>
+    <h2>Here are some of the frequently asked questions</h2>
+    <div class="question">
+        What is roadmap.sh?
+    </div>
+    <div class="answer">
+      <p class="answer-text">
+        roadmap.sh is a community effort to create learning paths, guides,
+        project ideas and other similar content to help developers grow in their
+        careers.
+      </p>
+    </div>
+    <script>
+        const questions = document.querySelectorAll('.question');
+        questions.forEach(question => {
+            question.addEventListener('click', () => {
+            const answer = question.nextElementSibling;
+            answer.style.display = 
+                answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+  </body>
+</html>
