@@ -41,51 +41,52 @@ This repository contains frontend projects built following the roadmap.sh front-
 
 Click any of the images below to view the readme and live demo of the project.
 
-<div align="center">
+<div align="center" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 16px;">
 
   <a href="https://github.com/loihnt05/tailor/tree/main/single-page-cv">
-    <img src="./assets/single-page.png" alt="Single Page" style="height: 180px; margin: 8px;" />
+    <img src="./assets/single-page.png" alt="Single Page" style="height: 180px;" />
   </a>
   <a href="https://github.com/loihnt05/tailor/tree/main/multiple-pages">
-    <img src="./assets/multiple-page.png" alt="Multiple Page" style="height: 180px; margin: 8px;" />
+    <img src="./assets/multiple-page.png" alt="Multiple Page" style="height: 180px;" />
   </a>
   <a href="https://github.com/loihnt05/tailor/tree/main/changelog">
-    <img src="./assets/changelog.png" alt="Changelog" style="height: 180px; margin: 8px;" />
+    <img src="./assets/changelog.png" alt="Changelog" style="height: 180px;" />
   </a>
   <a href="https://github.com/loihnt05/tailor/tree/main/testimonial-cards">
-    <img src="./assets/testimonial-cards.png" alt="Testimonial Cards" style="height: 180px; margin: 8px;" />
+    <img src="./assets/testimonial-cards.png" alt="Testimonial Cards" style="height: 180px;" />
   </a>
   <a href="https://github.com/loihnt05/tailor/tree/main/datepicker">
-    <img src="./assets/datepicker.png" alt="Datepicker" style="height: 180px; margin: 8px;" />
+    <img src="./assets/datepicker.png" alt="Datepicker" style="height: 180px;" />
   </a>
   <a href="https://github.com/loihnt05/tailor/tree/main/accessible-form">
-    <img src="./assets/acessible-form.png" alt="Accessible Form" style="height: 180px; margin: 8px;" />
+    <img src="./assets/acessible-form.png" alt="Accessible Form" style="height: 180px;" />
   </a>
   <a href="https://github.com/loihnt05/tailor/tree/main/image-grid">
-    <img src="./assets/grid-img.png" alt="Image Grid" style="height: 180px; margin: 8px;" />
+    <img src="./assets/grid-img.png" alt="Image Grid" style="height: 180px;" />
   </a>
   <a href="https://github.com/loihnt05/tailor/tree/main/tool-tip">
-    <img src="./assets/tooltip.png" alt="Tooltip" style="height: 180px; margin: 8px;" />
+    <img src="./assets/tooltip.png" alt="Tooltip" style="height: 180px;" />
   </a>
   <a href="https://github.com/loihnt05/tailor/tree/main/tabs">
-    <img src="./assets/tabs.png" alt="Tabs" style="height: 180px; margin: 8px;" />
+    <img src="./assets/tabs.png" alt="Tabs" style="height: 180px;" />
   </a>
   <a href="https://github.com/loihnt05/tailor/tree/main/cookie">
-    <img src="./assets/cookie.png" alt="Cookie" style="height: 180px; margin: 8px;" />
+    <img src="./assets/cookie.png" alt="Cookie" style="height: 180px;" />
   </a>
   <a href="https://github.com/loihnt05/tailor/tree/main/restricted-textarea">
-    <img src="./assets/textarea.png" alt="Textarea" style="height: 180px; margin: 8px;" />
+    <img src="./assets/textarea.png" alt="Textarea" style="height: 180px;" />
   </a>
   <a href="https://github.com/loihnt05/tailor/tree/main/accordion">
-    <img src="./assets/accordion.png" alt="Accordion" style="height: 180px; margin: 8px;" />
+    <img src="./assets/accordion.png" alt="Accordion" style="height: 180px;" />
   </a>
   <a href="https://github.com/loihnt05/tailor/tree/main/age-calculator">
-    <img src="./assets/age-calculator.png" alt="Age Calculator" style="height: 180px; margin: 8px;" />
+    <img src="./assets/age-calculator.png" alt="Age Calculator" style="height: 180px;" />
   </a>
   <a href="https://github.com/loihnt05/tailor/tree/main/flash-card">
-    <img src="./assets/flash-cards.png" alt="Flash Cards" style="height: 180px; margin: 8px;" />
+    <img src="./assets/flash-cards.png" alt="Flash Cards" style="height: 180px;" />
   </a>
 </div>
+
 
 ## Information
 <p align="center">
@@ -97,7 +98,7 @@ Click any of the images below to view the readme and live demo of the project.
     <a href="https://mail.google.com/mail"
     ><img
       src="https://img.shields.io/badge/honguyentailoi05%40gmail.com-email?style=flat&label=Contact&color=blue"
-      alt="Emails"
+      alt="Email"
   /></a>
 </p>
 
