@@ -1,4 +1,11 @@
+html {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 body {
+  width: 60%;
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
   margin: 0;
