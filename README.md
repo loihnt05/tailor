@@ -1,10 +1,10 @@
-# Tailor Fontend Projects
+# 🎨 Tailor Frontend Projects
 
 This repository contains frontend projects built following the roadmap.sh front-end developer path.
 
-## Projects list
+## 📁 Projects List
 
-### Beginner
+### 🟢 Beginner
 
 - <a href='https://github.com/loihnt05/tailor/tree/main/single-page-cv'> Single-Page CV </a>
 
@@ -35,9 +35,13 @@ This repository contains frontend projects built following the roadmap.sh front-
 
 - <a href='https://github.com/loihnt05/tailor/tree/main/flash-card'> Flash Cards </a>
 
-### Intermediate
+### 🟡 Intermediate
 
-### Advanced
+### 🔴 Advanced
+
+---
+
+## 🖼️ Project Screenshots
 
 Click any of the images below to view the readme and live demo of the project.
 
