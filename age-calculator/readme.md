@@ -5,3 +5,5 @@
 - Display the result on the same page after the user submits the form
 - Implement basic validation to ensure the birthdate is valid
 - Use simple styling to make the calculator visually appealing and responsive
+
+<img src="../assets/age-calculator.png"/>

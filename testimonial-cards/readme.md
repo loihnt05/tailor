@@ -5,3 +5,5 @@
 - Triangle
 
 Feel free to use any content and images you like for the testimonials.
+
+<img src="../assets/testimonial-cards.png"/>
