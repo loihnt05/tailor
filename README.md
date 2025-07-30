@@ -1,6 +1,6 @@
 # 🎨 Tailor Frontend Projects
 
-This repository contains frontend projects built following the roadmap.sh front-end developer path.
+This repository contains frontend projects built following the <a href="https://roadmap.sh/frontend/projects">roadmap</a> front-end developer path.
 
 ## 📁 Projects List
 
